@@ -1,0 +1,52 @@
+.form{
+    max-width: 400px;
+    margin: 10px auto;
+}
+.form-group{
+    margin: 10px 0; /*canh lề xuống dòng 10px */
+
+}
+.form-control{
+    width: 50%;
+    padding: 5px; /* chỉnh sửa hộp cho lớn lên */
+    outline: none; /* trỏ chuột vào kh có hiện lên viền*/
+    border: 1px solid gray;
+    border-radius: 3px; /* Bo góc */
+
+}
+.form-control label{
+    font-weight: bold; /* Chỉnh font */
+    font-variant: small-caps;
+}
+.form-control:focus{
+    background-color: yellow;
+    box-shadow: 0 0 3px red;
+    border: 1px solid yellow;
+}
+.form-button{ /* định dạng nút phím thêm, sửa, xoá */
+    padding: 8px 30px;
+    outline: none;
+    border: none;
+    border-radius: 20px; /* Bo góc hộp*/
+    font-weight: bold; /* Chữ đậm */
+    background-color: white;
+    color: orangered; /* Màu chữ */
+    box-shadow: inset 0 0 20px #6f4ca0; /* Thuộc tính ínset có bóng vô bên trong */
+
+}
+.form-button:hover{ /* Định dạng trỏ chuột vào nút thêm, sửa , xoá */
+    color: #6f4ca0;
+    box-shadow: inset 0 0 20px orangered; /* Thuộc tính ínset có bóng vô bên trong */
+    cursor: pointer; /* trỏ chuột vào để nút chuột biến thành nút ấn vào */
+}
+.form-button:focus {
+    color: yellow;
+    box-shadow: inset 0 0 20px orangered;
+}
+.form-button:disabled{ /* định dạng nút xoá riêng biệt */
+    color: darkgray;
+    box-shadow: inset 0 0 20px gray;
+    cursor: not-allowed; /* Trỏ chuột vô kh bị đổi thành biểu tượng chuột khác */
+}
+
+
